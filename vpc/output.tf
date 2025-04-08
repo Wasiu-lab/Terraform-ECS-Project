@@ -54,11 +54,11 @@ output "internet_gateway" {
 }
 
 # export the first availability zones
-output "availability_zone 1" {
+output "availability_zone_1" {
   value = data.aws_availability_zones.available_zones.names[0]
 }
 
 # export the second availability zones
-output "availability_zone 2" {
+output "availability_zone_2" {
   value = data.aws_availability_zones.available_zones.names[1]
 }
