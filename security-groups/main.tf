@@ -50,7 +50,7 @@ resource "aws_security_group" "bastion_security_group" {
     from_port   = 0
     to_port     = 0
     protocol    = -1
-    cidr_blocks = "[0.0.0.0/0]"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   tags = {
@@ -84,7 +84,7 @@ resource "aws_security_group" "app_server_security_group" {
     from_port   = 0
     to_port     = 0
     protocol    = -1
-    cidr_blocks = "[0.0.0.0/0]"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   tags = {
