@@ -15,6 +15,6 @@ output "app_server_security_group_id" {
 
 # export the database security group id
 output "database_security_group_id" {
-  value = 
+  value = aws_security_group.database_security_group.id
 }
 
