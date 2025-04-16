@@ -1,6 +1,6 @@
 # create application load balancer
 resource "aws_lb" "application_load_balancer" {
-  name                       = "${}-${}-alb"
+  name                       = "${var.project_name}-${var.environment}}-alb"
   internal                   = 
   load_balancer_type         = 
   security_groups            = 
@@ -8,7 +8,7 @@ resource "aws_lb" "application_load_balancer" {
   enable_deletion_protection = 
 
   tags = {
-    Name = "${}-${}-alb"
+    Name = "${var.project_name}-${var.environment}-alb"
   }
 }
 
